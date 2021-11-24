@@ -150,7 +150,6 @@ vendor prefix :
 body {
     background-image: linear-gradient(90deg, black, #111, #333);
     background-position: center;
-    background-repeat: repeat-y;
     font: 18px/36px 'BebasNeue', 'Arial Narrow', 'sans-serif';
 }
 
