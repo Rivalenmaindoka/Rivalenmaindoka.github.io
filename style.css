@@ -1,0 +1,566 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 
+vendor prefix :
+-webkit- untuk G.Chrome, Safari & Opera baru.
+-moz- untuk Firefox
+-ms- untuk Internet Explorer
+-o- untuk Opera lama 
+*/
+
+/* Font */
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(fonts/bebasneue.woff) format('woff');
+}
+
+
+
+/* style */
+
+body {
+    background-image: linear-gradient(90deg, black, #111, #333);
+    background-position: center;
+    background-repeat: repeat-y;
+    font: 18px/36px 'BebasNeue', 'Arial Narrow', 'sans-serif';
+}
+
+/* Container */
+.container {
+    border: 1px solid black;
+    background-color: rgba(30, 30, 30, 0.5);
+    width: 900px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3)
+}
+
+.container .header h1 {
+    text-align: center;
+}
+
+.fb {
+    width: 150px;
+    height: 150px;
+    background-image: url(facebook.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    top: 10px;
+    right: -40px;
+}
+
+.fb:hover {
+    width: 150px;
+    height: 150px;
+    background-image: url(facebook.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    top: 8px;
+    right: -40px;
+}
+
+.wa {
+    width: 150px;
+    height: 150px;
+    background-image: url(wa.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    top: 40px;
+    right: -40px;
+}
+
+.wa:hover {
+    width: 150px;
+    height: 150px;
+    background-image: url(wa.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    top: 38px;
+    right: -40px;
+}
+
+
+.header ul {
+    text-align: center;
+}
+
+.header ul li {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+.header a {
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #ff00de,
+        0 0 60px #ff00de,
+        0 0 70px #ff00de,
+        0 0 80px #ff00de,
+        0 0 100px #ff00de;
+    font-size: 22px;
+}
+
+.header a:hover {
+    position: relative;
+    top: -4px;
+}
+
+.header a:active {
+    color: blue;
+}
+
+.pengumuman {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 5px 10px 0px 10px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/* Content */
+.main {
+    width: 650px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: 10px;
+    float: left;
+    margin-top: 15px;
+    border-radius: 10px;
+
+}
+
+/* bagian kategori */
+.kat ul li {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.kat {
+    height: 30px;
+    background-image: linear-gradient(#555, #222);
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    box-shadow: inset 0px 0px 7px 5px rgba(0, 0, 0, 0.3);
+}
+
+.kat a {
+    text-decoration: none;
+    color: white;
+}
+
+.kat a:hover {
+    text-decoration: underline;
+}
+
+/* akhir bagian kategori */
+
+
+/* bagian list game */
+.section {
+
+    padding-top: 20px;
+    border-bottom: 2px solid black;
+}
+
+.section li {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    border: 3px solid black;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+
+.section li img {
+    border-radius: 10px;
+}
+
+.section li span {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 100px;
+    color: black;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    transition: 0.3s;
+}
+
+.section li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+
+
+
+
+
+
+/* overlay */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+}
+
+.overlay:target img {
+    animation: sdf 1.3s;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: sdf .8s .8s forwards;
+    text-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3)
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+    animation: sdf .5s .8s forwards;
+}
+
+
+/* navigasi */
+.next,
+.prev {
+    width: 57px;
+    height: 57px;
+    background-image: url(img/next.png);
+    position: absolute;
+    text-indent: -9999px;
+    top: 45%;
+    margin-left: 30px;
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(img/prev.png);
+    margin-left: -90px;
+}
+
+
+
+
+
+
+/* Bagian Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    float: right;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3)
+}
+
+.top {
+    height: 30px;
+    background-image: linear-gradient(#555, #222);
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+    box-shadow: inset 0px 0px 7px 4px rgba(0, 0, 0, 0.3);
+}
+
+.gb1 li,
+.gb2 li,
+.gb3 li {
+    height: 130px;
+    width: 200px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    border: 3px solid black;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 7px;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+.gb1 li img,
+.gb2 li img,
+.gb3 li img {
+    border-radius: 10px;
+}
+
+.gb1 li span,
+.gb2 li span,
+.gb3 li span {
+    display: block;
+    width: 200px;
+    height: 130px;
+    background-color: rgba(200, 200, 200, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 100px;
+    color: black;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    transition: 0.3s;
+}
+
+.gb1 li a:hover span,
+.gb2 li a:hover span,
+.gb3 li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+/* Footer */
+
+.footer {
+    background-image: linear-gradient(#555, #222);
+    padding: 5px;
+    margin-left: -10px;
+    width: 890px;
+    text-align: center;
+    box-shadow: inset 0px 0px 7px 5px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.footer .copy {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/* animasi */
+@keyframes zdf {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes sdf {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+    *zoom: 1;
+}
